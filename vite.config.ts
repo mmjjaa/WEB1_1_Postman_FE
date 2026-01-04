@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig, type PluginOption } from 'vite';
 import path from 'path';
 import svgr from 'vite-plugin-svgr';
 import viteCompression from 'vite-plugin-compression';
@@ -34,6 +34,6 @@ export default defineConfig(({ command }) => ({
             filename: 'stats.html',
             open: true,
             gzipSize: true
-        })
+        }) as PluginOption
     ]
 }));
