@@ -20,6 +20,10 @@ export const ListItem = ({
                         src={image}
                         alt="icon"
                         className="w-[50px] h-[50px] rounded-full object-cover"
+                        onError={(e) => {
+                            e.currentTarget.onerror = null;
+                            e.currentTarget.src = '/profile1.svg';
+                        }}
                     />
                 )}
                 {contents}

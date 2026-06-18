@@ -17,7 +17,7 @@ export const useUserInfo = () => {
         }
         const userInfo = {
             nickname: userInfoResponse.nickname || '알 수 없음',
-            profileImageUrl: userInfoResponse.profileImageUrl || 'testimg.jpg',
+            profileImageUrl: userInfoResponse.profileImageUrl || '/profile1.svg',
             email: userInfoResponse.email || '알 수 없음'
         };
         setUser(userInfo);

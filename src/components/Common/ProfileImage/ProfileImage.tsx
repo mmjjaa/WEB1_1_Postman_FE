@@ -24,6 +24,10 @@ export const ProfileImage = ({
                 alt={imageItem.alt}
                 className="rounded-full"
                 style={{ width, height }}
+                onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = '/profile1.svg';
+                }}
             />
         </div>
     );

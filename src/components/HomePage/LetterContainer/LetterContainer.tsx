@@ -113,7 +113,9 @@ export const LetterContainer = ({ letters }: LetterContainerProps) => {
     const noLetters = (
         <div className="relative pb-10 mx-[-20px] overflow-hidden">
             <WaveContainer />
-            <div className="h-[380px] mt-[50px]"></div>
+            <div className="h-[380px] mt-[50px]">
+                <HomeBottle />
+            </div>
         </div>
     );
 

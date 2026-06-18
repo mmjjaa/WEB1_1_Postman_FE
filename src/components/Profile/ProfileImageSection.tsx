@@ -12,25 +12,24 @@ import { logout } from '@/service/auth/logout';
 export const PROFILE_IMAGES = [
     {
         id: 1,
-        url: 'https://img.bottler.store/profile1.svg',
+        url: '/profile1.svg',
         alt: 'Profile 1'
     },
     {
         id: 2,
-        url: 'https://img.bottler.store/profile2.svg',
+        url: '/profile2.svg',
         alt: 'Profile 2'
     },
     {
         id: 3,
-        url: 'https://img.bottler.store/profile3.svg',
+        url: '/profile3.svg',
         alt: 'Profile 3'
     },
     {
         id: 4,
-        url: 'https://img.bottler.store/profile4.svg',
+        url: '/profile4.svg',
         alt: 'Profile 4'
     }
-    // ...
 ];
 
 type ProfileImageSectionProps = {
@@ -111,7 +110,7 @@ export const ProfileImageSection = ({
                 width="100px"
                 height="100px"
                 imageItem={{
-                    url: user?.profileImageUrl || '/sample.jpg'
+                    url: user?.profileImageUrl || '/profile1.svg'
                 }}
             />
             {renderSliderMenuContainer()}
