@@ -12,7 +12,7 @@ export const TopButtonContainer = () => {
     if (isLoading || isError || !data) {
         unreadNotifications = 0;
     } else {
-        unreadNotifications = data?.result.count;
+        unreadNotifications = data?.result?.count ?? 0;
     }
 
     return (

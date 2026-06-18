@@ -14,6 +14,7 @@ export const AuthProvider = ({ children }: AuthLayoutProps) => {
         const initializeAuth = async () => {
             const accessToken = tokenStorage.getAccessToken();
             if (accessToken === null) {
+                setIsLoading(false);
                 return;
             }
             const success = await handleGetUserInfo();
