@@ -17,10 +17,8 @@ export const AuthProvider = ({ children }: AuthLayoutProps) => {
                 setIsLoading(false);
                 return;
             }
-            const success = await handleGetUserInfo();
-            if (success) {
-                setIsLoading(false);
-            }
+            await handleGetUserInfo();
+            setIsLoading(false);
         };
         initializeAuth();
     }, []);
